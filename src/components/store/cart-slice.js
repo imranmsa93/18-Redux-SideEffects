@@ -14,9 +14,13 @@ const cartSlice = createSlice({
                 existingItem.totalPrice = existingItem.totalPrice + newItem.price
 
             } else {
-                state.items.push({id:newItem.id,price:newItem.price
-                    ,quantity:1,totalPrice:newItem.price,
-                    name:newItem.name});
+                state.items.push({
+                    id:newItem.id,
+                    price:newItem.price,
+                    quantity:1,
+                    totalPrice:newItem.price,
+                    name:newItem.title
+                });
             }
 
              state.totalQuantity++;
