@@ -1,6 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
+
+
 const initialValue = {isCartVisible:false, notification: null};
 const uiSlice = createSlice({
     name:"uiSlice",
@@ -18,5 +20,6 @@ const uiSlice = createSlice({
         }
     }
 });
+
 export const uiActions = uiSlice.actions; 
 export default uiSlice;

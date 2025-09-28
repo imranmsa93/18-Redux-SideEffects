@@ -9,5 +9,4 @@ const Card = (props) => {
     </section>
   );
 };
-
 export default Card;
